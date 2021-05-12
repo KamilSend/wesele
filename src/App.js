@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+
+
+import Menu from './components/menu/menu'
+import About from './components/about/about'
+import Ceremony from './components/ceremony/ceremony'
+import Gallery from './components/gallery/gallery'
+import Songbook from './components/songbook/songbook'
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu/>
+
+        <Switch>
+            <Route path="/informacje">
+                <About />
+            </Route>
+            <Route path="/ceremonia">
+                <Ceremony/>
+            </Route>
+            <Route path="/galeria">
+                <Gallery />
+            </Route>
+            <Route path="/śpiewnik">
+                <Songbook />
+            </Route>
+        </Switch>
+
+
+      {/*<About/>*/}
+      {/*<Ceremony/>*/}
+      {/*<Gallery/>*/}
+      {/*<Songbook/>*/}
     </div>
   );
 }

@@ -1,0 +1,114 @@
+@import "../../mixins";
+
+.mainNav{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:6vh;
+  background: linear-gradient(200deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0) 100%);
+  z-index: 11;
+  justify-content: flex-end;
+  align-items: center;
+  display: none;
+
+  @include respond(tab-land){
+    display: flex;
+  }
+}
+
+.menuLink{
+  min-width:115px;
+  text-align: center;
+  text-decoration: none !important;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  margin: 0 5px 0 5px;
+  transition: .2s;
+
+  &:hover{
+    border-bottom: 2px solid white;
+    font-size: 1.6rem;
+    color: white !important;
+  }
+
+  &:last-child{
+    margin-right: 30px;
+  }
+}
+
+.dropdown{
+  position: fixed !important;
+  border: none !important;
+  top:15px;
+  left:10px;
+  z-index:4;
+  border-radius: 5px;
+
+  button{
+    background-color: transparent !important;
+    border: none !important;
+    width:60px;
+    height: 60px;
+    border-radius: 5px;
+
+    &:after{
+      border: none !important;
+    }
+  }
+
+  div{
+    background-color: rgba(0,0,0, .6);
+    width:160px;
+    border: none !important;
+    border-radius: 5px;
+
+    a{
+      padding:10px;
+      font-size: 2rem;
+    }
+  }
+
+  @include respond(tab-land){
+    display: none;
+  }
+}
+
+.menuToggle{
+  display: block;
+  position: fixed !important;
+  top: 30px;
+  left: 25px;
+  z-index: 3;
+  -webkit-user-select: none;
+  user-select: none;
+  color:white;
+  @include respond(tab-land){
+    display: none;
+  }
+
+  .menuTogglePad{
+    position: fixed !important;
+    top:15px;
+    left:10px;
+    background-color: rgba(0,0,0, .7);
+    z-index: 4;
+    width:60px;
+    height: 60px;
+    border-radius: 5px;
+
+  }
+}
+
+.menuSpan{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  border-radius: 3px;
+  z-index: 5;
+}

@@ -1,0 +1,44 @@
+/*Typical breakpoints*/
+/*320 | 375 | 414 | 568 | 768 | 1024 | 1280 | 1366 | 1600 | 1920*/
+/*... in landscape*/
+/*L568 | L667 | L768 | L1024 | L1280*/
+/*... heights */
+/*H568 | H640 | H667 | H731 | H736 | H812 | H823 | H1024 | H1366 */
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media only screen and (min-width: 20rem) { @content };    //320px
+  }
+  @if $breakpoint == phone {
+    @media only screen and (min-width: 35.5rem) { @content };    //568px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (min-width: 48rem) { @content };     //768px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (min-width: 64rem) { @content };    //1024px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 85.375rem) { @content };    //1366px
+  }
+  @if $breakpoint == bigger-desktop {
+    @media only screen and (min-width: 100rem) { @content };    //1600px
+  }
+
+  @if $breakpoint == small-phone-land {
+    @media only screen and (min-height: 20rem) { @content };    //320px
+  }
+  @if $breakpoint == phone-land {
+    @media only screen and (min-height: 22.5rem) { @content };    //360px
+  }
+  @if $breakpoint == phone-height {
+    @media only screen and (min-height: 40rem) { @content };    //640px
+  }
+  @if $breakpoint == tab-height {
+    @media only screen and (min-height: 48rem) { @content };    //768px
+  }
+  @if $breakpoint == big-tab-height {
+    @media only screen and (min-height: 64rem) { @content };    //1024px
+  }
+
+}
