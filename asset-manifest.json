@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/wesele/static/css/main.7a7dc6aa.chunk.css",
+    "main.js": "/wesele/static/js/main.4d4addd2.chunk.js",
+    "main.js.map": "/wesele/static/js/main.4d4addd2.chunk.js.map",
+    "runtime-main.js": "/wesele/static/js/runtime-main.c301adb5.js",
+    "runtime-main.js.map": "/wesele/static/js/runtime-main.c301adb5.js.map",
+    "static/css/2.6e667860.chunk.css": "/wesele/static/css/2.6e667860.chunk.css",
+    "static/js/2.1e3d6971.chunk.js": "/wesele/static/js/2.1e3d6971.chunk.js",
+    "static/js/2.1e3d6971.chunk.js.map": "/wesele/static/js/2.1e3d6971.chunk.js.map",
+    "static/js/3.039935c9.chunk.js": "/wesele/static/js/3.039935c9.chunk.js",
+    "static/js/3.039935c9.chunk.js.map": "/wesele/static/js/3.039935c9.chunk.js.map",
+    "index.html": "/wesele/index.html",
+    "static/css/2.6e667860.chunk.css.map": "/wesele/static/css/2.6e667860.chunk.css.map",
+    "static/css/main.7a7dc6aa.chunk.css.map": "/wesele/static/css/main.7a7dc6aa.chunk.css.map",
+    "static/js/2.1e3d6971.chunk.js.LICENSE.txt": "/wesele/static/js/2.1e3d6971.chunk.js.LICENSE.txt",
+    "static/media/a.fddb61b5.jpg": "/wesele/static/media/a.fddb61b5.jpg",
+    "static/media/b.eda8d719.jpg": "/wesele/static/media/b.eda8d719.jpg",
+    "static/media/c.9bd4cbfe.jpg": "/wesele/static/media/c.9bd4cbfe.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c301adb5.js",
+    "static/css/2.6e667860.chunk.css",
+    "static/js/2.1e3d6971.chunk.js",
+    "static/css/main.7a7dc6aa.chunk.css",
+    "static/js/main.4d4addd2.chunk.js"
+  ]
+}
