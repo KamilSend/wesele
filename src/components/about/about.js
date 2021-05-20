@@ -10,7 +10,9 @@ const about = () => (
             <div className={styles.carouselWrapper}>
                 <Carousel/>
             </div>
-            <div>podstawowe informacje</div>
+            <div>Kinga & Kamil</div>
+            <p>Bieremy se ślub 9 października 2021 </p>
+            <p>Więcej szczegółów w sekcji ceremonia</p>
         </div>
     </>
 )

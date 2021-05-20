@@ -4,6 +4,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  position: absolute;
+  z-index: 2;
 
   div{
     @include respond(tab-land){
